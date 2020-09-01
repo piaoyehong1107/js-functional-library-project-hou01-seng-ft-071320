@@ -23,6 +23,7 @@ const fi = (function() {
 
     reduce: function(collection, func, acc) {
       const newCollection=Object.values(collection)
+      let newacc=[]
       for (const ele of newCollection){
          newacc=acc+func(acc,ele,newCollection)
       }
