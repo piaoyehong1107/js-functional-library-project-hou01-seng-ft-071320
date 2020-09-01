@@ -54,6 +54,11 @@ const fi = (function() {
       return newCollection.length
     },
     
+    first: function(collection) {
+      const newCollection=Object.values(collection)
+      return newCollection.length
+    },
+    
     
   }
 })()
