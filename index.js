@@ -32,12 +32,11 @@ const fi = (function() {
 
     find: function(collection, predicate) {
       const newCollection=Object.values(collection)
-      let newColle=[]
       for (const ele of newCollection){
        if (predicate(ele)){
-         newColle.push(ele)
+         return ele}
        }
-       return newColle }
+       
     },
   }
 })()
