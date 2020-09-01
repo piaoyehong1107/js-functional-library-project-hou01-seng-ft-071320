@@ -25,7 +25,7 @@ const fi = (function() {
       const newCollection=Object.values(collection)
       let newacc=[]
       for (const ele of newCollection){
-         func(acc,ele,newCollection)
+        acc= func(acc,ele,newCollection)
       }
       return acc;
     },
