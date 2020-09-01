@@ -56,7 +56,7 @@ const fi = (function() {
     
     first: function(collection,n) {
       const newCollection=Object.values(collection)
-      return newCollection.slice(0,n)
+      return newCollection.slice(n-0)
     },
     
     
