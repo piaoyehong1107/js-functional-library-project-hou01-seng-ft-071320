@@ -39,8 +39,6 @@ const fi = (function() {
        }
        return newColle
     },
-
-
   }
 })()
 
