@@ -30,7 +30,7 @@ const fi = (function() {
       return acc;
     },
 
-    functions: function() {
+    functions: function(collection, predicate) {
 
     },
 
