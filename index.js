@@ -34,7 +34,7 @@ const fi = (function() {
       const newCollection=Object.values(collection)
       let newColle=[]
       for (const ele of newCollection){
-       if predicate(ele){
+       if (predicate(ele)){
          newColle.push(ele)
        }
        return newColle
