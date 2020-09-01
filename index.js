@@ -4,16 +4,29 @@ const fi = (function() {
       return 'Start by reading https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0'
     },
 
-    each: function() {
-
+    each: function(collection, func) {
+      const newCollection=Object.values(collection)
+      for (const ele of newCollection){
+        func(ele)
+      }
+      return collection
     },
 
-    map: function() {
-
+    map: function(collection, func) {
+      const newCollection=Object.values(collection)
+      let newColle=[]
+      for (const ele of newCollection){
+        newColle.push(func(ele))
+      }
+      return newColle;
     },
 
-    reduce: function() {
-
+    reduce: function(collection, func, acc) {
+      const newCollection=Object.values(collection)
+      for (const ele of newCollection){
+         newacc=acc+func(acc,ele,newCollection)
+      }
+      return newacc;
     },
 
     functions: function() {
