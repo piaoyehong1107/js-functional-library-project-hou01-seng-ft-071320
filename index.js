@@ -39,7 +39,7 @@ const fi = (function() {
        }
        return newColle
     },
-  }
+  
 })()
 
 fi.libraryMethod()
