@@ -54,7 +54,7 @@ const fi = (function() {
       return newCollection.length
     },
     
-    first: function(collection) {
+    first: function(collection,n) {
       const newCollection=Object.values(collection)
       return newCollection.length
     },
