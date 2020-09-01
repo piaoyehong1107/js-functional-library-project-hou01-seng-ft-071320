@@ -49,6 +49,16 @@ const fi = (function() {
        return newColle
     },
     
+     size: function(collection, predicate) {
+      const newCollection=Object.values(collection)
+      let newColle=[]
+      for (const ele of newCollection){
+       if (predicate(ele)){
+         newColle.push(ele)}
+       }
+       return newColle
+    },
+    
     
   }
 })()
