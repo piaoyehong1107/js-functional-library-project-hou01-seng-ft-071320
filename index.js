@@ -37,7 +37,7 @@ const fi = (function() {
        if (predicate(ele)){
          newColle.push(ele)
        }
-       return newColle
+       return newColle}
     },
   }
 })()
