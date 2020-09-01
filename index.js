@@ -51,12 +51,7 @@ const fi = (function() {
     
      size: function(collection) {
       const newCollection=Object.values(collection)
-      let newColle=[]
-      for (const ele of newCollection){
-       if (predicate(ele)){
-         newColle.push(ele)}
-       }
-       return newColle
+      return newCollection.length
     },
     
     
