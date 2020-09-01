@@ -39,7 +39,14 @@ const fi = (function() {
        
     },
     
-    
+    filter: function(collection, predicate) {
+      const newCollection=Object.values(collection)
+      for (const ele of newCollection){
+       if (predicate(ele)){
+         return ele}
+       }
+       
+    },
     
     
   }
