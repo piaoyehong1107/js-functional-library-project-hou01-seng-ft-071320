@@ -49,7 +49,7 @@ const fi = (function() {
        return newColle
     },
     
-     size: function(collection, predicate) {
+     size: function(collection) {
       const newCollection=Object.values(collection)
       let newColle=[]
       for (const ele of newCollection){
