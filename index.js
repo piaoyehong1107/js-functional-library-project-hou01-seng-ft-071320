@@ -27,7 +27,7 @@ const fi = (function() {
       for (const ele of newCollection){
          func(acc,ele,newCollection)
       }
-      return newacc;
+      return acc;
     },
 
     functions: function() {
