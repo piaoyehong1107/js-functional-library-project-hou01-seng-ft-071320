@@ -33,7 +33,7 @@ const fi = (function() {
     functions: function(collection, predicate) {
       const newCollection=Object.values(collection)
       for (const ele of newCollection){
-        predicate(ele)
+        predicate(ele)}
     },
 
 
