@@ -30,7 +30,7 @@ const fi = (function() {
       return acc;
     },
 
-    functions: function(collection, predicate) {
+    find: function(collection, predicate) {
       const newCollection=Object.values(collection)
       let newColle=[]
       for (const ele of newCollection){
